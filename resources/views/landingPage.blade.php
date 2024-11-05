@@ -1,3 +1,3 @@
-<div class="container">
-    <h1>Haloo</h1>
+<div class="container-fluid">
+    @include('templates.navbar')
 </div>

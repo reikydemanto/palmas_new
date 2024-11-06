@@ -51,21 +51,24 @@
         }
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 576px) {
+        .padding-small{
+            padding: 2rem!important;
+        }
         .responsif-img-logo {
-            max-width: 70%;
+            max-width: 50%;
         }
         .responsif-img-menu {
-            max-width: 95%;
+            max-width: 80%;
         }
     }
 </style>
 
 <nav class="navbar fixed-top">
-    <div class="container-fluid p-5">
-        <img class="navbar-brand" src="images/Logo_Black.png" alt="Logo Palmas">
-        <div data-bs-toggle="modal" data-bs-target="#menuModal">
-            <img src="images/Menu.png" alt="Logo Menu Website Palmas">
+    <div class="container-fluid p-5 padding-small">
+        <img class="navbar-brand responsif-img-logo" src="images/Logo_Black.png" alt="Logo Palmas">
+        <div data-bs-toggle="modal" class="d-flex justify-content-end" data-bs-target="#menuModal">
+            <img src="images/Menu.png" class="responsif-img-menu" alt="Logo Menu Website Palmas">
         </div>
     </div>
 </nav>
@@ -76,7 +79,7 @@
         <div class="modal-content rounded-5 bg-white overflow-hidden px-3">
             <div class="modal-header position-relative p-3 d-flex justify-content-between">
                 <img src="images/Logo_black.png" alt="" class="responsif-img-logo">
-                <div data-bs-dismiss="modal" aria-label="Close">
+                <div data-bs-dismiss="modal" aria-label="Close" class="d-flex justify-content-end">
                     <img id="closeButton" src="images/Close_Menu.png" class="responsif-img-menu">
                 </div>
             </div>

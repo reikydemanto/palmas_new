@@ -17,20 +17,17 @@
         content: none;
     }
 
-    @media (max-width: 576px) {
-        .responsif-button-position {
-            transform: translate(-50%, -200%) !important;
-        }
+    .responsif-button-position {
+        transform: translate(-50%, -100%) !important;
+    }
 
-        .button-add-to-cart {
-            padding: 0.75rem !important;
-            /* mengecilkan padding */
-        }
+    .button-add-to-cart {
+        padding: 0.75rem !important;
+    }
 
-        /* Mengecilkan ukuran gambar di dalamnya */
-        .button-add-to-cart img {
-            width: 34px;
-            height: 34px;
+    @media (max-width: 1024px) {
+        .big-car{
+            height: 70vh!important;
         }
     }
     @media (max-width: 992px) {
@@ -54,8 +51,15 @@
             width: 18% !important;
         }
     }
+
+    @media (max-width: 576px) {
+        .button-add-to-cart img {
+            width: 34px;
+            height: 34px;
+        }
+    }
 </style>
-<div class="wrapper position-relative" style="height: 100vh">
+<div class="wrapper position-relative big-car" style="height: 100vh">
     <div class="swiper container-fluid" style="height: 100%">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -131,7 +135,7 @@
     </div>
     <a class="position-absolute start-50 translate-middle z-1 p-3 shadow rounded-circle bottom-0 button-add-to-cart responsif-button-position"
         style="background-color: #FFC008; href=" #">
-        <img class="plus" src="images/Add_to_Cart_Button.png" alt="add_to_cart_button">
+        <img class="plus w-100" src="images/Add_to_Cart_Button.png" alt="add_to_cart_button">
     </a>
 </div>
 

@@ -2,4 +2,5 @@
     @include('templates.navbar')
     @include('templates.bigCarrousel')
     @include('templates.cool_box')
+    @include('templates.bigImage')
 </div>

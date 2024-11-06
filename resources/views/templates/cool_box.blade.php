@@ -19,7 +19,7 @@
         }
 
         .font-cool-box-big{
-            font-size: 8vw!important;
+            font-size: 9vw!important;
         }
         .font-cool-box-small{
             font-size: 2vw!important;

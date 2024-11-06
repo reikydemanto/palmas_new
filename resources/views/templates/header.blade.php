@@ -11,7 +11,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     {{-- Jquery --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    {{-- Swiper JS  --}}
+    {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
@@ -44,7 +44,26 @@
             font-family: 'Helvetica-heavy-con';
             src: url('fonts/HelveticaNeueLTStd-HvCn.otf') format('opentype');
         }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
     </style>
 </head>
 
-<body class="antialiased">
+<body class="antialiased custom-scrollbar">

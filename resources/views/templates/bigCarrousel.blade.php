@@ -25,11 +25,6 @@
         padding: 0.75rem !important;
     }
 
-    @media (max-width: 1024px) {
-        .big-car{
-            height: 70vh!important;
-        }
-    }
     @media (max-width: 992px) {
         .responsif-img-text-malt-og {
             width: 30% !important;
@@ -59,7 +54,7 @@
         }
     }
 </style>
-<div class="wrapper position-relative big-car" style="height: 100vh">
+<div class="wrapper position-relative" style="height: 100vh">
     <div class="swiper container-fluid" style="height: 100%">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">

@@ -56,10 +56,10 @@
             padding: 2rem!important;
         }
         .responsif-img-logo {
-            max-width: 50%;
+            max-width: 40%;
         }
         .responsif-img-menu {
-            max-width: 80%;
+            max-width: 60%;
         }
     }
 </style>

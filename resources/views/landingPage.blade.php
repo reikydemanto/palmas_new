@@ -3,4 +3,6 @@
     @include('templates.bigCarrousel')
     @include('templates.cool_box')
     @include('templates.bigImage')
+    @include('templates.bigText')
+    {{-- <section style="height: 100vh"></section> --}}
 </div>

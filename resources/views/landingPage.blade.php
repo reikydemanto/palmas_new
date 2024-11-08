@@ -6,5 +6,6 @@
     @include('templates.bigText')
     @include('templates.mediumCarrousel')
     @include('templates.palmasVarietyPack')
+    @include('templates.contacts',['kiri' => 'For a dose of <br> freshness in your feed','atas'=>'instagram','bawah'=>'tiktok','tengah'=>null])
     <section style="height: 100vh"></section>
 </div>

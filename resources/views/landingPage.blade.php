@@ -4,5 +4,6 @@
     @include('templates.cool_box')
     @include('templates.bigImage')
     @include('templates.bigText')
-    {{-- <section style="height: 100vh"></section> --}}
+    @include('templates.mediumCarrousel')
+    <section style="height: 100vh"></section>
 </div>

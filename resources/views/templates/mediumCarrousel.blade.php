@@ -113,7 +113,7 @@
                 <img class="position-absolute"
                     style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
                     src="images/Malt_Og_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.svg" alt="">
+                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
@@ -128,7 +128,7 @@
                 <img class="position-absolute"
                     style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
                     src="images/Grape_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.svg" alt="">
+                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
@@ -144,7 +144,7 @@
                 <img class="position-absolute"
                     style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
                     src="images/Orange_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.svg" alt="">
+                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
@@ -162,7 +162,7 @@
                 <img class="position-absolute"
                     style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
                     src="images/Coconut_Greentea_Orange_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.svg" alt="">
+                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
             </div>
         </div>
         <!-- If we need pagination -->

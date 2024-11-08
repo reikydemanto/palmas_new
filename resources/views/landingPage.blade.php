@@ -5,5 +5,6 @@
     @include('templates.bigImage')
     @include('templates.bigText')
     @include('templates.mediumCarrousel')
+    @include('templates.palmasVarietyPack')
     <section style="height: 100vh"></section>
 </div>

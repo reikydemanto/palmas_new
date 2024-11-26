@@ -13,10 +13,14 @@
     .sosmed:hover {
         border-color: black;
     }
+
+    .size-font{
+        font-size: clamp(2.5rem, 2.5vw + 1rem, 3.25rem);
+    }
 </style>
 <section class="z-0 row position-relative mx-auto" style="width: 100%; height: auto; box-sizing: border-box;">
     <div class="col-md-6 col-sm-12 p-5 border border-black">
-        <h1 class="text-uppercase text-black" style="font-family: 'Helvetica-roman'; font-size:52px ; line-height: 1.25">
+        <h1 class="text-uppercase text-black size-font" style="font-family: 'Helvetica-roman' ; line-height: 1.25">
             <?=$kiri?>
         </h1>
     </div>

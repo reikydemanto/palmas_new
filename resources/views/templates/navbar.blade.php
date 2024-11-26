@@ -1,8 +1,8 @@
 <style>
-    
-    .href-link{
+    .href-link {
         text-decoration: none;
     }
+
     .modal-dialog {
         max-width: 98%;
     }
@@ -56,12 +56,14 @@
     }
 
     @media (max-width: 576px) {
-        .padding-small{
-            padding: 2rem!important;
+        .padding-small {
+            padding: 2rem !important;
         }
+
         .responsif-img-logo {
             max-width: 40%;
         }
+
         .responsif-img-menu {
             max-width: 60%;
         }
@@ -97,10 +99,12 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-3">
-                    <div class="p-0" style="overflow: hidden; border-radius: 25%">
-                        <img class="zoom-image" src="images/IMG_Pos.png" class="zoom-image" alt="">
-                    </div>
-                    <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">Point of sale</h2>
+                    <a class="href-link" href="/pointofsales">
+                        <div class="p-0" style="overflow: hidden; border-radius: 25%">
+                            <img class="zoom-image" src="images/IMG_Pos.png" class="zoom-image" alt="">
+                        </div>
+                        <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">Point of sale</h2>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-md-3">
                     <div class="p-0" style="overflow: hidden; border-radius: 25%">

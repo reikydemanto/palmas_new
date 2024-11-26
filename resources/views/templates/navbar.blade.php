@@ -1,4 +1,8 @@
 <style>
+    
+    .href-link{
+        text-decoration: none;
+    }
     .modal-dialog {
         max-width: 98%;
     }
@@ -85,10 +89,12 @@
             </div>
             <div class="modal-body row">
                 <div class="col-sm-12 col-md-3">
-                    <div class="p-0" style="overflow: hidden; border-radius: 25%">
-                        <img class="zoom-image" src="images/IMG_Shop.png" class="zoom-image" alt="">
-                    </div>
-                    <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">Shop</h2>
+                    <a class="href-link" href="/shop">
+                        <div class="p-0" style="overflow: hidden; border-radius: 25%">
+                            <img class="zoom-image" src="images/IMG_Shop.png" class="zoom-image" alt="">
+                        </div>
+                        <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">Shop</h2>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-md-3">
                     <div class="p-0" style="overflow: hidden; border-radius: 25%">

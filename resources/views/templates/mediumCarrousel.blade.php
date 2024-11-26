@@ -29,7 +29,7 @@
     }
 
     .swiper-slide:hover .white {
-        color: white;
+        color: white!important;
     }
 
     .plus_hover {
@@ -54,34 +54,6 @@
         font-size: clamp(28px, 4.5vw, 48px);
     }
 
-    /* h1 {
-        font-size: clamp(32px, 5vw, 56px);
-    }
-
-    h2 {
-        font-size: clamp(28px, 4.5vw, 48px);
-    }
-
-    h3 {
-        font-size: clamp(24px, 4vw, 40px);
-    }
-
-    h4 {
-        font-size: clamp(20px, 3.5vw, 32px);
-    }
-
-    h5 {
-        font-size: clamp(18px, 3vw, 28px);
-    }
-
-    h6 {
-        font-size: clamp(16px, 2.5vw, 24px);
-    }
-
-    p {
-        font-size: clamp(14px, 2vw, 20px);
-    } */
-
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -101,68 +73,81 @@
             <!-- Slides -->
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
-                    alt="Carousell_bg">
-                <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Og_Hover.png"
-                    alt="Carousell_bg">
-                <div class="position-absolute text-center white w-75"
-                    style="left: 50%; top: 5%; transform: translateX(-50%);">
-                    <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con';">MALT</h1>
-                    <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman';">THE O.G</h1>
-                </div>
-                <img class="position-absolute"
-                    style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                    src="images/Malt_Og_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                <a href="/product">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                        alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Og_Hover.png"
+                        alt="Carousell_bg">
+                    <div class="position-absolute text-center white w-75 text-black"
+                        style="left: 50%; top: 5%; transform: translateX(-50%);">
+                        <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con';">MALT</h1>
+                        <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman';">THE O.G</h1>
+                    </div>
+                    <img class="position-absolute"
+                        style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
+                        src="images/Malt_Og_can.png" alt="">
+                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
-                    alt="Carousell_bg">
-                <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Grape_Hover.png"
-                    alt="Carousell_bg">
-                <div class="position-absolute text-center w-75" style="left: 50%; top: 5%; transform: translateX(-50%);">
-                    <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con'">MALT</h1>
-                    <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">White Grape</h1>
-                </div>
-                <img class="position-absolute"
-                    style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                    src="images/Grape_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                <a href="/product">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                        alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Grape_Hover.png"
+                        alt="Carousell_bg">
+                    <div class="position-absolute text-center w-75 text-black"
+                        style="left: 50%; top: 5%; transform: translateX(-50%);">
+                        <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con'">MALT</h1>
+                        <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">White Grape
+                        </h1>
+                    </div>
+                    <img class="position-absolute"
+                        style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
+                        src="images/Grape_can.png" alt="">
+                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
-                    alt="Carousell_bg">
-                <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Orange_Hover.png"
-                    alt="Carousell_bg">
-                <div class="position-absolute text-center w-75" style="left: 50%; top: 5%; transform: translateX(-50%);">
-                    <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con';">MALT</h1>
-                    <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">Orange Bitter
-                    </h1>
-                </div>
-                <img class="position-absolute"
-                    style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                    src="images/Orange_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                <a href="/product">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                        alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Orange_Hover.png"
+                        alt="Carousell_bg">
+                    <div class="position-absolute text-center w-75 text-black"
+                        style="left: 50%; top: 5%; transform: translateX(-50%);">
+                        <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con';">MALT</h1>
+                        <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">Orange Bitter
+                        </h1>
+                    </div>
+                    <img class="position-absolute"
+                        style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
+                        src="images/Orange_can.png" alt="">
+                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
-                    alt="Carousell_bg">
-                <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Coconut_Hover.png"
-                    alt="Carousell_bg">
-                <div class="position-absolute text-center white w-75"
-                    style="left: 50%; top: 5%; transform: translateX(-50%);">
-                    <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con'">power charge
-                    </h1>
-                    <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">Coconut Greentea
-                        Orange</h1>
-                </div>
-                <img class="position-absolute"
-                    style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                    src="images/Coconut_Greentea_Orange_can.png" alt="">
-                <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                <a href="/product">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                        alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Coconut_Hover.png"
+                        alt="Carousell_bg">
+                    <div class="position-absolute text-center white w-75 text-black"
+                        style="left: 50%; top: 5%; transform: translateX(-50%);">
+                        <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con'">power
+                            charge
+                        </h1>
+                        <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">Coconut
+                            Greentea
+                            Orange</h1>
+                    </div>
+                    <img class="position-absolute"
+                        style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
+                        src="images/Coconut_Greentea_Orange_can.png" alt="">
+                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                </a>
             </div>
         </div>
         <!-- If we need pagination -->

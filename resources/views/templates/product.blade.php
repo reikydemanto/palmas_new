@@ -74,6 +74,12 @@
         transition: 1s;
     }
 
+    .hover-circle:hover{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+
     @media (max-width: 1024px) {
 
         .first-text-product {
@@ -126,9 +132,10 @@
     }
 
     @media (max-width: 576px) {
-        .nut-fact{
+        .nut-fact {
             width: 70%;
         }
+
         .button_number {
             display: none !important;
         }
@@ -193,8 +200,7 @@
         <h1 class="text-uppercase first-text-product" style="font-family:'Helvetica-roman'">zero proof
             malt brew</h1>
         <h1 class="text-uppercase second-text-product" style="font-family:'Helvesti-spike-regular'">The O.G</h1>
-        <p class="third-text-product" style="font-family:'Helvetica-roman'">IDR <span
-                id="price-per-can">26.000</span>,-/can</p>
+        <p class="third-text-product" style="font-family:'Helvetica-roman'" id="price-per-can">IDR 26.000,-/can</p>
         <p class="fourth-text-product" style="font-family:'Helvetica-roman'; width:70%">Sed ut perspiciatis unde omnis
             iste natus
             error sit
@@ -202,15 +208,15 @@
         <div class="d-flex justify-content-center gap-3 mt-4 mx-auto third-text-product container-input"
             style="font-family: 'Helvetica-roman'; font-size:40px; width: 100%">
             <div class="button_number d-flex gap-3">
-                <div class="border border-black rounded-circle mr-2" style="width: 64px; height:64px">4</div>
-                <div class="border border-black rounded-circle mr-2" style="width: 64px; height:64px;">6</div>
-                <div class="border border-black rounded-circle mr-2" style="width: 64px; height:64px;">12</div>
+                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-4" style="width: 64px; height:64px">4</div>
+                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-6" style="width: 64px; height:64px;">6</div>
+                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-12" style="width: 64px; height:64px;">12</div>
             </div>
             <div class="border border-black rounded-pill d-flex justify-content-between standard-width-input" style="height:64px;">
                 <div class="px-4 minus">
                     <img class="m-auto" src="../images/minus.png" alt="">
                 </div>
-                <input type="text" class="quantity bg-transparent text-center border-0"
+                <input type="text" id="quantity" class="quantity bg-transparent text-center border-0"
                     style="outline-width: 0; width:50%" value="0">
                 <div class="px-4 plus">
                     <img class="m-auto" src="../images/plus.png" alt="">
@@ -242,8 +248,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    
     $(document).ready(function() {
+
         var open = false;
         $('#plus-nut').click(function(event) {
             event.preventDefault(); // Mencegah link default
@@ -258,23 +264,51 @@
                 open = true
             }
         });
+
+        $('.minus').click(function(event) {
+            minus_button()
+            calculate_price()
+        })
+        $('.plus').click(function(event) {
+            plus_button()
+            calculate_price()
+        })
+        $('#quantity-4').click(function(event){
+            $('.quantity').val(4)
+            calculate_price()
+        })
+        $('#quantity-6').click(function(event){
+            $('.quantity').val(6)
+            calculate_price()
+        })
+        $('#quantity-12').click(function(event){
+            $('.quantity').val(12)
+            calculate_price()
+        })
     });
-    document.addEventListener('DOMContentLoaded', function() {
-        const minusButton = document.querySelector('.minus');
-        const plusButton = document.querySelector('.plus');
-        const input = document.querySelector('.quantity');
 
-        minusButton.addEventListener('click', function() {
-            if (input.value != 0) {
-                input.value = parseInt(input.value) - 1;
-            }
-        });
+    function minus_button() {
+        if ($('.quantity').val() != 0) {
+            $('.quantity').val(parseInt($('.quantity').val()) - 1)
+        }
+    }
 
-        plusButton.addEventListener('click', function() {
-            input.value = parseInt(input.value) + 1;
-        });
+    function plus_button() {
+        $('.quantity').val(parseInt($('.quantity').val()) + 1)
 
-    });
+    }
+
+    function calculate_price() {
+        var pricePerCan = 26000;
+        var quantity = $('.quantity').val()
+        if (quantity == 0) {
+            $('#price-per-can').text('IDR 26.000,-/can');
+        } else {
+            var totalPrice = quantity * pricePerCan
+            var formattedPrice = totalPrice.toLocaleString('id-ID');
+            $('#price-per-can').text('IDR ' + formattedPrice + ',-');
+        }
+    }
 
     const swiper = new Swiper('.swiper', {
         // Optional parameters

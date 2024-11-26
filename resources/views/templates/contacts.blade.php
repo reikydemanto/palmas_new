@@ -25,7 +25,7 @@
         </h1>
     </div>
     <?php if($tengah != null) { ?>
-    <div class="col-md-6 col-sm-12 p-0">
+    <div class="col-md-6 col-sm-12 p-0 border border-black">
         <div class="sosmed d-flex justify-contet-center align-items-center" style="width: 100%; height:100%">
             <h1 class="text-uppercase text-black" style="font-family: 'Helvetica-bold-con'; font-size: 24px; line-height: 32px">
                 <?=$tengah?>

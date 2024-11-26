@@ -17,3 +17,4 @@ Route::get('/', 'LandingPage@index');
 Route::get('/product', 'Product@index');
 Route::get('/shop', 'Shop@index');
 Route::get('/pointofsales', 'PointOfSales@index');
+Route::get('/contact', 'Contact@index');

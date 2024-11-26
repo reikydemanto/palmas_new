@@ -107,16 +107,20 @@
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-3">
-                    <div class="p-0" style="overflow: hidden; border-radius: 25%">
-                        <img class="zoom-image" src="images/IMG_FAQ.png" class="zoom-image" alt="">
-                    </div>
-                    <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">FAQ</h2>
+                    <a class="href-link" href="/contact">
+                        <div class="p-0" style="overflow: hidden; border-radius: 25%">
+                            <img class="zoom-image" src="images/IMG_FAQ.png" class="zoom-image" alt="">
+                        </div>
+                        <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">FAQ</h2>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-md-3">
-                    <div class="p-0" style="overflow: hidden; border-radius: 25%">
-                        <img class="zoom-image" src="images/IMG_Contact.png" class="zoom-image" alt="">
-                    </div>
-                    <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">Contact</h2>
+                    <a class="href-link" href="/contact">
+                        <div class="p-0" style="overflow: hidden; border-radius: 25%">
+                            <img class="zoom-image" src="images/IMG_Contact.png" class="zoom-image" alt="">
+                        </div>
+                        <h2 class="text-black py-3" style="font-family: 'Helvetica-roman'">Contact</h2>
+                    </a>
                 </div>
             </div>
         </div>

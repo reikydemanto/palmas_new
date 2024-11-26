@@ -128,7 +128,7 @@
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
     </div>
-    <a class="position-absolute start-50 translate-middle z-1 p-3 shadow rounded-circle bottom-0 button-add-to-cart responsif-button-position"
+    <a href="/product" class="position-absolute start-50 translate-middle z-1 p-3 shadow rounded-circle bottom-0 button-add-to-cart responsif-button-position"
         style="background-color: #FFC008; href=" #">
         <img class="plus w-100" src="images/Add_to_Cart_Button.png" alt="add_to_cart_button">
     </a>

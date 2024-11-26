@@ -14,6 +14,6 @@
     <div class="position-relative pe-1" style="left: 3%;">
         <p class="text-uppercase text-black pb-4 pe-2 font-size-small" style="font-family: 'Helvetica-roman'">discover new flavors in every
             can of palmas</p>
-        <button class="bg-black px-2 pt-2 pb-3 font-Helvetica-roman rounded-pill text-light border-0"><p class="m-0 button-text-see-all-product" style="font-size: 24px">See all our product</p></button>
+        <button class="bg-black px-3 pt-2 pb-3 font-Helvetica-roman rounded-pill text-light border-0"><p class="m-0 button-text-see-all-product" style="font-size: 24px">See all our product</p></button>
     </div>
 </section>

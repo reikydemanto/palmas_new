@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'LandingPage@index');
+Route::get('/product', 'Product@index');

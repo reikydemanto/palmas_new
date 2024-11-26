@@ -66,7 +66,7 @@
 
 <nav class="navbar fixed-top">
     <div class="container-fluid p-5 padding-small">
-        <img class="navbar-brand responsif-img-logo" src="images/Logo_Black.png" alt="Logo Palmas">
+        <a href="/"><img class="navbar-brand responsif-img-logo" src="images/Logo_Black.png" alt="Logo Palmas"></a>
         <div data-bs-toggle="modal" class="d-flex justify-content-end" data-bs-target="#menuModal">
             <img src="images/Menu.png" class="responsif-img-menu" alt="Logo Menu Website Palmas">
         </div>
@@ -78,7 +78,7 @@
     <div class="modal-dialog">
         <div class="modal-content rounded-5 bg-white overflow-hidden px-3">
             <div class="modal-header position-relative p-3 d-flex justify-content-between">
-                <img src="images/Logo_black.png" alt="" class="responsif-img-logo">
+                <a href="/"><img src="images/Logo_black.png" alt="" class="responsif-img-logo"></a>
                 <div data-bs-dismiss="modal" aria-label="Close" class="d-flex justify-content-end">
                     <img id="closeButton" src="images/Close_Menu.png" class="responsif-img-menu">
                 </div>

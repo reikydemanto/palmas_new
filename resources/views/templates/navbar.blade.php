@@ -84,7 +84,7 @@
     <div class="modal-dialog">
         <div class="modal-content rounded-5 bg-white overflow-hidden px-3">
             <div class="modal-header position-relative p-3 d-flex justify-content-between">
-                <a href="/"><img src="images/Logo_black.png" alt="" class="responsif-img-logo"></a>
+                <a href="/"><img src="images/Logo_Black.png" alt="" class="responsif-img-logo"></a>
                 <div data-bs-dismiss="modal" aria-label="Close" class="d-flex justify-content-end">
                     <img id="closeButton" src="images/Close_Menu.png" class="responsif-img-menu">
                 </div>

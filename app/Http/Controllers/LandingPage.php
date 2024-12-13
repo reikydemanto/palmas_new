@@ -12,5 +12,11 @@ class LandingPage extends Controller
             view('templates.header',) .
             view('landingPage',) .
             view('templates.footer');
-    }   
+    }
+
+    public function download()
+    {
+        return
+            view('downloadSalesKit');
+    }
 }

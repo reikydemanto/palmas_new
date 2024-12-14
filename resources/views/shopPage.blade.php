@@ -3,5 +3,5 @@
     @include('templates.bigTextShop')
     @include('templates.allProduct')
     @include('templates.palmasVarietyPack')
-    @include('templates.contacts',['kiri' => 'Other platform<br>for your convenience','atas'=>'tokopedia','bawah'=>'shopee','tengah'=>null])
+    @include('templates.contacts',['type' => 'ecommerce'])
 </div>

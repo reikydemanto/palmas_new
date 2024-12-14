@@ -128,7 +128,7 @@
                 </div>
             </div>
         </div>
-        @include('templates.contacts',['kiri' => 'Contact Us <br>Directly','tengah'=>'whatsapp<br>business'])
+        @include('templates.contacts',['type' => 'contact'])
     </div>
     <div id="faq-ordering" class="contact mx-auto w-50 mt-4 size-font-button-faq" style="font-family: Helvetica-roman"
         hidden>

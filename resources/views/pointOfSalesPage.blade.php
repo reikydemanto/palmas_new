@@ -3,5 +3,5 @@
     @include('templates.searchBarPos')
     @include('templates.maps')
     <div style="height:10vh"></div>
-    @include('templates.contacts',['kiri' => 'OTHER PLATFORM <br> FOR YOUR convenience','atas'=>'tokopedia','bawah'=>'shopee','tengah'=>null])
+    @include('templates.contacts',['type' => 'ecommerce'])
 </div>

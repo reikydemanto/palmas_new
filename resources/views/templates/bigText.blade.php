@@ -28,7 +28,7 @@
                 </button></a>
             <a href="/salessheetnpew2025"><button
                     class="bg-black px-3 pt-2 pb-3 font-Helvetica-roman rounded-pill text-light border-0">
-                    <p class="m-0 button-text-see-all-product" style="font-size: 24px">Download Sales Kit</p>
+                    <p class="m-0 button-text-see-all-product" style="font-size: 24px">Download Sales Sheet</p>
                 </button></a>
         </div>
     </div>

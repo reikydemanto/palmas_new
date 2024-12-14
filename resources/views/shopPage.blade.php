@@ -2,6 +2,6 @@
     @include('templates.navbar')
     @include('templates.bigTextShop')
     @include('templates.allProduct')
-    @include('templates.palmasVarietyPack')
+    {{-- @include('templates.palmasVarietyPack') --}}
     @include('templates.contacts',['type' => 'ecommerce'])
 </div>

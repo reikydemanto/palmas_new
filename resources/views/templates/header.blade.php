@@ -17,32 +17,32 @@
     <style>
         @font-face {
             font-family: 'Helvetica-light';
-            src: url('fonts/HelveticaNeueLTStd-Lt.otf') format('opentype');
+            src: url('{{ asset('fonts/HelveticaNeueLTStd-Lt.otf') }}') format('opentype');
         }
 
         @font-face {
             font-family: 'Helvetica-medium';
-            src: url('fonts/HelveticaNeueLTStd-Md.otf') format('opentype');
+            src: url('{{ asset('fonts/HelveticaNeueLTStd-Md.otf') }}') format('opentype');
         }
 
         @font-face {
             font-family: 'Helvesti-spike-regular';
-            src: url('fonts/ABCHelveestiSpikes-Regular.otf') format('opentype');
+            src: url('{{ asset('fonts/ABCHelveestiSpikes-Regular.otf') }}') format('opentype');
         }
 
         @font-face {
             font-family: 'Helvetica-roman';
-            src: url('fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
+            src: url('{{ asset('fonts/HelveticaNeueLTStd-Roman.otf') }}') format('opentype');
         }
 
         @font-face {
             font-family: 'Helvetica-bold-con';
-            src: url('fonts/HelveticaNeueLTStd-BdCn.otf') format('opentype');
+            src: url('{{ asset('fonts/HelveticaNeueLTStd-BdCn.otf') }}') format('opentype');
         }
 
         @font-face {
             font-family: 'Helvetica-heavy-con';
-            src: url('fonts/HelveticaNeueLTStd-HvCn.otf') format('opentype');
+            src: url('{{ asset('fonts/HelveticaNeueLTStd-HvCn.otf') }}') format('opentype');
         }
 
         .custom-scrollbar::-webkit-scrollbar {

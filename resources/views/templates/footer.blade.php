@@ -18,7 +18,7 @@
 <section class="position-relative" style="width: 100%; height: 100%">
     <div class="row footer_container">
         <div class="col-sm-12 col-md-6 mb-3">
-            <img src="./images/Logo_transparent_dasb.png" alt="palmas logo">
+            <img src="{{ asset('/images/Logo_transparent_dasb.png') }}" alt="palmas logo">
         </div>
         <div class="col-sm-12 col-md-6 d-flex justify-content-end align-items-end">
             <div class="d-flex">

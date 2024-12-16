@@ -41,7 +41,7 @@
     <div class="w-100" style="box-sizing: border-box; height: auto;">
         <div class="row text-center text-uppercase" style="font-family: 'Helvetica-roman'">
             @foreach ($articles as $item)
-            <a href="#" class="col-md-4 p-0 border border-black position-relative article-hover">
+            <a href="/ouractivities/{{ $item->ID_ARTICLE }}" class="col-md-4 p-0 border border-black position-relative article-hover">
                 <img src="images/{{ $item->FRONT_IMAGES }}" class="img-fluid front-images" alt="">
                 <h1 class="position-absolute top-50 start-50 translate-middle">
                     <?=$item->TITLE?>

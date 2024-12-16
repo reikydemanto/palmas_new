@@ -110,9 +110,9 @@
 
 <nav class="navbar fixed-top p-0">
     <div class="container-fluid p-5 padding-small">
-        <a href="/"><img class="navbar-brand responsif-img-logo" src="images/Logo_Black.png" alt="Logo Palmas"></a>
+        <a href="/"><img class="navbar-brand responsif-img-logo" src="{{ asset ('images/Logo_Black.png') }}" alt="Logo Palmas"></a>
         <div data-bs-toggle="modal" class="d-flex justify-content-end" data-bs-target="#menuModal">
-            <img src="images/Menu.png" class="responsif-img-menu" alt="Logo Menu Website Palmas">
+            <img src="{{ asset ('images/Menu.png') }}" class="responsif-img-menu" alt="Logo Menu Website Palmas">
         </div>
     </div>
 </nav>
@@ -123,9 +123,9 @@
         <div class="modal-content bg-white overflow-hidden p-0"
             style="border-radius:0!important; auto; box-sizing: border-box;">
             <div class="modal-header position-relative p-5 padding-small d-flex justify-content-between">
-                <a href="/"><img src="images/Logo_Black.png" alt="" class="responsif-img-logo"></a>
+                <a href="/"><img src="{{ asset ('images/Logo_Black.png') }}" alt="" class="responsif-img-logo"></a>
                 <div data-bs-dismiss="modal" aria-label="Close" class="d-flex justify-content-end">
-                    <img id="closeButton" src="images/Close_Menu.png" class="responsif-img-menu">
+                    <img id="closeButton" src="{{ asset ('images/Close_Menu.png') }}" class="responsif-img-menu">
                 </div>
             </div>
             <div class="modal-body p-0 navbar-flex">

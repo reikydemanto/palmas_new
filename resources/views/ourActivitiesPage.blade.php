@@ -37,7 +37,7 @@
 </style>
 <div class="container-fluid overflow-hidden p-0">
     @include('templates.navbar')
-    @include('templates.bigTextShop')
+    @include('templates.bigTextShop',['aboutPage' => false])
     <div class="w-100" style="box-sizing: border-box; height: auto;">
         <div class="row text-center text-uppercase" style="font-family: 'Helvetica-roman'">
             @foreach ($articles as $item)

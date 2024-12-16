@@ -21,3 +21,4 @@ Route::get('/pointofsales', 'PointOfSales@index');
 Route::get('/contact', 'Contact@index');
 Route::get('/ouractivities', 'OurActivities@index');
 Route::get('/ouractivities/{id}', 'OurActivities@indexArticles');
+Route::get('/about', 'About@index');

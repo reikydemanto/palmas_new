@@ -138,7 +138,7 @@
                         </h1>
                     </div>
                 </a>
-                <a href="#" class="col-custom border border-black p-0 href-link">
+                <a href="/about" class="col-custom border border-black p-0 href-link">
                     <div class="sosmed d-flex justify-contet-center align-items-center"
                         style="width: 100%; height:100%">
                         <h1 class="text-uppercase text-black"

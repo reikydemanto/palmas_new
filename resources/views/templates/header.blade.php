@@ -49,8 +49,16 @@
             width: 0px;
             height: 0px;
         }
+        .custom-navbar-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 0px;
+        }
 
         .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .custom-navbar-scrollbar::-webkit-scrollbar-track {
             background: #f1f1f1;
             border-radius: 10px;
         }
@@ -59,8 +67,15 @@
             background: #888;
             border-radius: 10px;
         }
+        .custom-navbar-scrollbar::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
 
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .custom-navbar-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
     </style>

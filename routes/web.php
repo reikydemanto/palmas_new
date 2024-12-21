@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'LandingPage@index');
 Route::get('/salessheetnpew2025', 'LandingPage@download');
+Route::get('/downloadSaleSheet', 'LandingPage@downloadSaleSheet');
+Route::get('/downloadBrochure', 'LandingPage@downloadBrochure');
 Route::get('/product', 'Product@index');
 Route::get('/shop', 'Shop@index');
 Route::get('/pointofsales', 'PointOfSales@index');

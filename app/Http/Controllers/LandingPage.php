@@ -19,4 +19,14 @@ class LandingPage extends Controller
         return
             view('downloadSalesKit');
     }
+    public function downloadSaleSheet()
+    {
+        return
+            view('downloadSaleSheet');
+    }
+    public function downloadBrochure()
+    {
+        return
+            view('downloadBrochure');
+    }
 }

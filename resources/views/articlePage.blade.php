@@ -93,10 +93,10 @@
     </div>
     <div class="row mt-5">
         <div class="col-md-12 col-lg-8 p-5">
-            <p style="font-size: clamp(1rem, 1.2rem + 1vw, 2rem); font-family:'Helvetica-roman'; line-height: 130%;">
-                <b>Elevate your moments with our Handcrafted Zero Proof Carbonated Malt Brew! Crafted for pure joy, this
+            <p style="font-size: clamp(1rem, 1.2rem + 1vw, 2rem); font-family:'Helvetica-bold'; line-height: 110%;">
+                Elevate your moments with our Handcrafted Zero Proof Carbonated Malt Brew! Crafted for pure joy, this
                     bubbly sensation is all about big flavors without the alcohol. Grab a can, share the cheer, and
-                    raise your drink to memorable, guilt-free moments.</b></p>
+                    raise your drink to memorable, guilt-free moments.</p>
             <p class="mt-5"
                 style="font-size: clamp(1rem, 1.2rem + 1vw, 2rem); font-family:'Helvetica-roman'; line-height: 130%;">{{
                 $article->DESCRIPTION }}</p>

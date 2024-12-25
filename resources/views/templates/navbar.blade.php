@@ -171,12 +171,12 @@
         transition: transform 0.8s ease-in-out;
     }
 
-    .button-npew-download img{
+    .button-npew-download img {
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
 
-    .button-npew-download h1{
+    .button-npew-download h1 {
         margin: 0;
     }
 
@@ -184,16 +184,44 @@
         opacity: 1;
     }
 
-    .text-npew-button{
+    .text-npew-button {
         transition: color 0.5s ease-in-out;
     }
 
-    .href-link{
+    .href-link {
         text-decoration: none;
     }
-    .text-npew-button:hover{
-        color: white!important;
+
+    .text-npew-button:hover {
+        color: white !important;
     }
+
+    .move-right {
+        left: 50px;
+    }
+
+    .move-left {
+        right: 50px;
+    }
+
+    .move-right:hover {
+        border: 3px solid black !important;
+    }
+
+    .move-left:hover {
+        border: 3px solid black !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: none;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: none;
+    }
+
 
     @media(max-width:1280px) {
         .slide-button {
@@ -208,6 +236,13 @@
 
         .slide-button {
             top: 45%;
+        }
+
+        .swiper-slide .primary-image{
+            width: 75%!important;
+        }
+        .swiper-slide .secondary-image{
+            width: 75%!important;
         }
     }
 
@@ -314,6 +349,42 @@
             width: 30% !important;
         }
 
+        .move-right {
+            width: 40px !important;
+            height: 40px !important;
+            left: 24px !important;
+        }
+
+        .move-left {
+            width: 40px !important;
+            height: 40px !important;
+            right: 24px !important;
+        }
+
+        .btn-can-npew-active {
+            width: 48px!important;
+            height: 48px!important;
+        }
+        .btn-can-npew-noactive {
+            width: 48px!important;
+            height: 48px!important;
+        }
+        .btn-label-npew-noactive {
+            width: 48px!important;
+            height: 48px!important;
+        }
+        .btn-label-npew-active {
+            width: 48px!important;
+            height: 48px!important;
+        }
+
+        .swiper-slide .primary-image{
+            width: 100%!important;
+        }
+        .swiper-slide .secondary-image{
+            width: 100%!important;
+        }
+
     }
 </style>
 
@@ -348,7 +419,7 @@
                         <img id="closeButton" src="{{ asset ('images/Close_Menu.png') }}" class="responsif-img-menu">
                     </div>
                 </div>
-                <div class="position-relative w-100" style="height: 80vh" id="carousel-container">
+                {{-- <div class="position-relative w-100" style="height: 80vh" id="carousel-container">
                     <div id="papuan-red-pop-div"
                         class="first-image container-product position-absolute translate-middle d-flex justify-content-center  div-container-image"
                         style=" height:50vh; top:40%">
@@ -429,7 +500,111 @@
                             </button>
                         </div>
                     </div>
+                </div> --}}
+
+                <div id="swiperNav" class="swiper w-100" style="height: 80%;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide position-relative">
+                            <div id="papuan-red-pop-div" class="position-absolute top-50 start-50 translate-middle w-50 h-50">
+                                <img class="primary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-active w-50"
+                                    src="{{ asset('/images/Papuan_Red_Pop_NPEW.png') }}" alt="">
+                                <img class="secondary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-noactive w-50"
+                                    src="{{ asset('/images/Papuan_Red_Pop_NPEW2.png') }}" alt="">
+                                <div class="w-100 py-5 position-absolute top-100 d-flex justify-content-center">
+                                    <button onclick="canClicked('papuan-red-pop-div')"
+                                        class="btn-can-npew-active mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/can-active.png') }}" alt="">
+                                    </button>
+                                    <button onclick="labelClicked('papuan-red-pop-div')"
+                                        class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide position-relative">
+                            <div id="salted-papuan-red-pop-div"
+                                class="position-absolute top-50 start-50 translate-middle w-50 h-50">
+                                <img class="primary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-active w-50"
+                                    src="{{ asset('/images/Salted_Papuan_Red_Pop_NPEW.png') }}" alt="">
+                                <img class="secondary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-noactive w-50"
+                                    src="{{ asset('/images/Salted_Papuan_Red_Pop_NPEW2.png') }}" alt="">
+                                <div class="w-100 py-5 position-absolute top-100 d-flex justify-content-center">
+                                    <button onclick="canClicked('salted-papuan-red-pop-div')"
+                                        class="btn-can-npew-active mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/can-active.png') }}" alt="">
+                                    </button>
+                                    <button onclick="labelClicked('salted-papuan-red-pop-div')"
+                                        class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide position-relative">
+                            <div id="greentea_orange"
+                                class="position-absolute top-50 start-50 translate-middle w-50 h-50">
+                                <img class="primary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-active w-50"
+                                    src="{{ asset('/images/Greentea_Orange_NPEW.png') }}" alt="">
+                                <img class="secondary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-noactive w-50"
+                                    src="{{ asset('/images/Greentea_Orange_NPEW2.png') }}" alt="">
+                                <div class="w-100 py-5 position-absolute top-100 d-flex justify-content-center">
+                                    <button onclick="canClicked('greentea_orange')"
+                                        class="btn-can-npew-active mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/can-active.png') }}" alt="">
+                                    </button>
+                                    <button onclick="labelClicked('greentea_orange')"
+                                        class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide position-relative">
+                            <div id="strawberry_sakura"
+                                class="position-absolute top-50 start-50 translate-middle w-50 h-50">
+                                <img class="primary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-active w-50"
+                                    src="{{ asset('/images/Strawberry_Sakura_NPEW.png') }}" alt="">
+                                <img class="secondary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-noactive w-50"
+                                    src="{{ asset('/images/Strawberry_Sakura_NPEW2.png') }}" alt="">
+                                <div class="w-100 py-5 position-absolute top-100 d-flex justify-content-center">
+                                    <button onclick="canClicked('strawberry_sakura')"
+                                        class="btn-can-npew-active mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/can-active.png') }}" alt="">
+                                    </button>
+                                    <button onclick="labelClicked('strawberry_sakura')"
+                                        class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
+                                        style="width:68px;height:68px">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev move-right border border-black rounded-circle"
+                        style="height: 68px; width:68px;">
+                        <img class="position-absolute img-fluid" src="{{ asset('images/Button_Left.png') }}" alt="">
+                    </div>
+                    <div class="swiper-button-next move-left border border-black rounded-circle"
+                        style="height: 68px; width:68px;">
+                        <img class="position-absolute img-fluid" src="{{ asset('images/Button_Right.png') }}" alt="">
+                    </div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
+
                 <div class="row">
                     <a href="/downloadSaleSheet" class="col-md-6 border border-black p-0 href-link">
                         <div class="text-npew-button button-npew-download text-black position-relative d-flex justify-content-center align-items-center"
@@ -443,7 +618,8 @@
                         </div>
                     </a>
                     <a href="/downloadBrochure" class="col-md-6 border border-black p-0 href-link">
-                        <div class="text-npew-button button-npew-download text-black position-relative d-flex justify-content-center align-items-center" style="width: 100%; height:100%">
+                        <div class="text-npew-button button-npew-download text-black position-relative d-flex justify-content-center align-items-center"
+                            style="width: 100%; height:100%">
                             <h1 class="text-uppercase z-1"
                                 style="font-family: 'Helvetica-bold-con'; font-size: 24px; line-height: 32px">
                                 Download Sale Sheet
@@ -453,7 +629,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="position-absolute slide-button d-flex justify-content-between start-50 translate-middle">
+                {{-- <div
+                    class="position-absolute slide-button d-flex justify-content-between start-50 translate-middle">
                     <button onclick="slideLeft()"
                         class="button-slide-left d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
                         style="width:68px;height:68px">
@@ -464,7 +641,7 @@
                         style="width:68px;height:68px">
                         <img class="img-fluid" src="{{ asset('/images/button-right.png') }}" alt="">
                     </button>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -532,6 +709,33 @@
     </div>
 </div>
 
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const swiperNav = new Swiper('#swiperNav', {
+        // Optional parameters
+        direction: 'horizontal',
+        speed: 500,
+        loop: false,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            enabled: false,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            enabled: false,
+        },
+        });
+</script>
 <script>
     $(document).ready(function() {
         const $closeButton = $('#closeButton');

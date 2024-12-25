@@ -44,6 +44,10 @@
             font-family: 'Helvetica-heavy-con';
             src: url('{{ asset('fonts/HelveticaNeueLTStd-HvCn.otf') }}') format('opentype');
         }
+        @font-face {
+            font-family: 'Helvetica-bold';
+            src: url('{{ asset('fonts/HelveticaNeueLTStd-Bd.otf') }}') format('opentype');
+        }
 
         .custom-scrollbar::-webkit-scrollbar {
             width: 0px;

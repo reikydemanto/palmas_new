@@ -74,7 +74,7 @@
         transition: 1s;
     }
 
-    .hover-circle:hover{
+    .hover-circle:hover {
         cursor: pointer;
         background-color: black;
         color: white;
@@ -171,76 +171,80 @@
     <div class="col-md-12 col-lg-4 p-0">
         <div class="swiper bg-warning" style="width: 100%; height:100%">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="width:100%; height:auto">
-                    <img style="width:100%; height:100% ;object-fit: cover;" src="../images/Variant_1.png"
+                <div class="swiper-slide position-relative" style="width:100%; height:auto">
+                    <img class="position-absolute z-1 start-50 translate-middle" style="width:35%; top: 50%;"
+                        src="{{ asset('images/'.$product_detail->CAN_CARROUSEL_IMG) }}" alt="">
+                    <img class="position-absolute z-0 top-50 start-50 translate-middle w-100 img-fluid"
+                        src="{{ asset('images/'.$product_detail->BG_CARROUSEL_IMG) }}" alt="Carousell_bg">
+                </div>
+                <div class="swiper-slide">
+                    <img style="width:100%; height:100% ;object-fit: cover;" src="{{ asset('images/Variant_2.png') }}"
                         alt="variant_1">
                 </div>
                 <div class="swiper-slide">
-                    <img style="width:100%; height:100% ;object-fit: cover;" src="../images/Variant_2.png"
+                    <img style="width:100%; height:100% ;object-fit: cover;" src="{{ asset('images/Variant_3.png') }}"
                         alt="variant_1">
                 </div>
                 <div class="swiper-slide">
-                    <img style="width:100%; height:100% ;object-fit: cover;" src="../images/Variant_3.png"
-                        alt="variant_1">
-                </div>
-                <div class="swiper-slide">
-                    <img style="width:100%; height:100% ;object-fit: cover;" src="../images/Variant_4.png"
+                    <img style="width:100%; height:100% ;object-fit: cover;" src="{{ asset('images/Variant_4.png') }}"
                         alt="variant_1">
                 </div>
             </div>
             <div class="swiper-button-prev">
-                <img class="position-absolute" style="left: 10%;" src="images/Button_Left.png" alt="">
+                <img class="position-absolute" style="left: 10%;" src="{{ asset('images/Button_Left.png') }}" alt="">
             </div>
             <div class="swiper-button-next">
-                <img class="position-absolute" style="right: 10%;" src="images/Button_Right.png" alt="">
+                <img class="position-absolute" style="right: 10%;" src="{{ asset('images/Button_Right.png') }}" alt="">
             </div>
         </div>
     </div>
     <div class="col-md-12 col-lg-8 d-flex flex-column text-center justify-content-center align-items-center py-4">
-        <h1 class="text-uppercase first-text-product" style="font-family:'Helvetica-roman'">zero proof
-            malt brew</h1>
-        <h1 class="text-uppercase second-text-product" style="font-family:'Helvesti-spike-regular'">The O.G</h1>
-        <p class="third-text-product" style="font-family:'Helvetica-roman'" id="price-per-can">IDR 26.000,-/can</p>
+        {{-- <h1 class="text-uppercase first-text-product" style="font-family:'Helvetica-roman'">zero proof
+            malt brew</h1> --}}
+        <h1 class="text-uppercase second-text-product" style="font-family:'Helvesti-spike-regular'">{{
+            $product_detail->NAME }}</h1>
+        {{-- <p class="third-text-product" style="font-family:'Helvetica-roman'" id="price-per-can">IDR 26.000,-/can</p>
         <p class="fourth-text-product" style="font-family:'Helvetica-roman'; width:70%">Sed ut perspiciatis unde omnis
             iste natus
             error sit
-            voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <div class="d-flex justify-content-center gap-3 mt-4 mx-auto third-text-product container-input"
+            voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> --}}
+        {{-- <div class="d-flex justify-content-center gap-3 mt-4 mx-auto third-text-product container-input"
             style="font-family: 'Helvetica-roman'; font-size:40px; width: 100%">
             <div class="button_number d-flex gap-3">
-                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-4" style="width: 64px; height:64px">4</div>
-                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-6" style="width: 64px; height:64px;">6</div>
-                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-12" style="width: 64px; height:64px;">12</div>
+                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-4"
+                    style="width: 64px; height:64px">4</div>
+                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-6"
+                    style="width: 64px; height:64px;">6</div>
+                <div class="border border-black rounded-circle mr-2 hover-circle" id="quantity-12"
+                    style="width: 64px; height:64px;">12</div>
             </div>
-            <div class="border border-black rounded-pill d-flex justify-content-between standard-width-input" style="height:64px;">
+            <div class="border border-black rounded-pill d-flex justify-content-between standard-width-input"
+                style="height:64px;">
                 <div class="px-4 minus">
-                    <img class="m-auto" src="../images/minus.png" alt="">
+                    <img class="m-auto" src="{{ asset('images/minus.png') }}" alt="">
                 </div>
                 <input type="text" id="quantity" class="quantity bg-transparent text-center border-0"
                     style="outline-width: 0; width:50%" value="0">
                 <div class="px-4 plus">
-                    <img class="m-auto" src="../images/plus.png" alt="">
+                    <img class="m-auto" src="{{ asset('images/plus.png') }}" alt="">
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 <div class="mx-auto p-3" style="width: 94%; height:auto; margin-top: 150px; margin-bottom: 150px">
     <div class="row">
         <div class="col-lg-6 col-xl-7">
-            <h2 class="text-black" style="font-family: 'Helvetica-roman'">Elevate your moments with our Handcrafted
-                Zero Proof Carbonated Malt Brew! Crafted for pure joy, this bubbly sensation is all about big
-                flavors without the alcohol. Grab a can, share the cheer, and raise your drink to memorable,
-                guilt-free moments.</h2>
+            <h2 class="text-black" style="font-family: 'Helvetica-roman'">{{ $product_detail->DESCRIPTION }}</h2>
         </div>
         <div class="col-md-2 d-flex align-items-center position-relative">
             <a id="plus-nut" class="z-2 rounded-circle shadow button-add-to-cart position-relative plus-nut"
                 style="background-color: #FFC008; width:64px; height:64px; display:block;" href="">
-                <img class="z-2 position-absolute plus-img"
-                    style="left: 50%; top:50%; transform: translate(-50%, -50%)" src="images/Add_to_Cart_Button.png"
-                    alt="add_to_cart_button">
+                <img class="z-2 position-absolute plus-img" style="left: 50%; top:50%; transform: translate(-50%, -50%)"
+                    src="{{ asset('images/Add_to_Cart_Button.png') }}" alt="add_to_cart_button">
             </a>
-            <img class="z-1 position-absolute nut-fact" style="left:15%; top: 50%" src="images/Nut.png" alt="">
+            <img class="z-1 position-absolute nut-fact" style="left:15%; top: 50%" src="{{ asset('images/'.$product_detail->NUT_IMAGE) }}"
+                alt="">
         </div>
     </div>
 </div>

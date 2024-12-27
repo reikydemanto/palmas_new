@@ -73,10 +73,10 @@
             <!-- Slides -->
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <a href="/product">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                <a href="/product/3">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
                         alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Og_Hover.png"
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/malt-og-bg.png') }}"
                         alt="Carousell_bg">
                     <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
@@ -85,18 +85,18 @@
                     </div>
                     <img class="position-absolute"
                         style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                        src="images/Malt_Og_can.png" alt="">
-                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                        src="{{ asset('images/malt-og-can.png') }}" alt="">
+                    <img class="position-absolute plus_hover" src="{{ asset('images/Button_Plus_Hover.png') }}" alt="">
                 </a>
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <a href="/product">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                <a href="/product/2">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
                         alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Grape_Hover.png"
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/malt-white-grape-bg.png') }}"
                         alt="Carousell_bg">
-                    <div class="position-absolute text-center w-75 text-black"
+                    <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
                         <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con'">MALT</h1>
                         <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">White Grape
@@ -104,18 +104,18 @@
                     </div>
                     <img class="position-absolute"
                         style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                        src="images/Grape_can.png" alt="">
-                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                        src="{{ asset('images/malt-white-grape-can.png') }}" alt="">
+                    <img class="position-absolute plus_hover" src="{{ asset('images/Button_Plus_Hover.png') }}" alt="">
                 </a>
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <a href="/product">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                <a href="/product/4">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
                         alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Orange_Hover.png"
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/malt-orange-bitter-bg.png') }}"
                         alt="Carousell_bg">
-                    <div class="position-absolute text-center w-75 text-black"
+                    <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
                         <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con';">MALT</h1>
                         <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman'">Orange Bitter
@@ -123,16 +123,16 @@
                     </div>
                     <img class="position-absolute"
                         style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                        src="images/Orange_can.png" alt="">
-                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                        src="{{ asset('images/malt-orange-bitter-can.png') }}" alt="">
+                    <img class="position-absolute plus_hover" src="{{ asset('images/Button_Plus_Hover.png') }}" alt="">
                 </a>
             </div>
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
-                <a href="/product">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="images/Carousell_bg.png"
+                <a href="/product/10">
+                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
                         alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="images/Coconut_Hover.png"
+                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/coconut-green-tea-orange-bg.png') }}"
                         alt="Carousell_bg">
                     <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
@@ -145,8 +145,8 @@
                     </div>
                     <img class="position-absolute"
                         style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
-                        src="images/Coconut_Greentea_Orange_can.png" alt="">
-                    <img class="position-absolute plus_hover" src="images/Button_Plus_Hover.png" alt="">
+                        src="{{ asset('images/coconut-green-tea-orange-can.png') }}" alt="">
+                    <img class="position-absolute plus_hover" src="{{ asset('images/Button_Plus_Hover.png') }}" alt="">
                 </a>
             </div>
         </div>
@@ -155,10 +155,10 @@
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev move-right">
-            <img class="position-absolute" src="images/Button_Left.png" alt="">
+            <img class="position-absolute" src="{{ asset('images/Button_Left.png') }}" alt="">
         </div>
         <div class="swiper-button-next move-left">
-            <img class="position-absolute" src="images/Button_Right.png" alt="">
+            <img class="position-absolute" src="{{ asset('images/Button_Right.png') }}" alt="">
         </div>
 
         <!-- If we need scrollbar -->

@@ -114,5 +114,5 @@
 
 <body class="antialiased custom-scrollbar">
     <div id="loading">
-        <img class="w-100 bounce" src="{{ asset('images/Logo_black.png') }}" alt="">
+        <img class="w-100 bounce" src="{{ asset('images/Logo_Black.png') }}" alt="">
     </div>

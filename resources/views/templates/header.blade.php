@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {{-- Swiper JS --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <style>
         @font-face {
@@ -53,6 +54,7 @@
             width: 0px;
             height: 0px;
         }
+
         .custom-navbar-scrollbar::-webkit-scrollbar {
             width: 8px;
             height: 0px;
@@ -62,6 +64,7 @@
             background: #f1f1f1;
             border-radius: 10px;
         }
+
         .custom-navbar-scrollbar::-webkit-scrollbar-track {
             background: #f1f1f1;
             border-radius: 10px;
@@ -71,6 +74,7 @@
             background: #888;
             border-radius: 10px;
         }
+
         .custom-navbar-scrollbar::-webkit-scrollbar-thumb {
             background: #888;
             border-radius: 10px;
@@ -79,10 +83,36 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
         .custom-navbar-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #555;
+        }
+
+        #loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            z-index: 9999;
+        }
+
+        #loading.hidden {
+            display: none;
+        }
+
+        .bounce {
+            max-width: 200px; /* Ukuran maksimal gambar */
+            opacity: 0; /* Awal transparan */
         }
     </style>
 </head>
 
 <body class="antialiased custom-scrollbar">
+    <div id="loading">
+        <img class="w-100 bounce" src="{{ asset('images/Logo_black.png') }}" alt="">
+    </div>

@@ -40,6 +40,25 @@
 </script>
 {{-- Swiper JS --}}
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    window.onload = function() {
+    // Cari elemen loading
+    const loadingScreen = document.getElementById('loading');
+    
+    // Tambahkan kelas 'hidden' untuk menyembunyikan loading screen
+    loadingScreen.classList.add('hidden');
+};
+</script>
+<script>
+    gsap.to(".bounce", {
+            opacity: 1,           // Fade-in
+            scale: 1.2,           // Membesar sedikit
+            duration: 1.5,        // Durasi animasi
+            ease: "power3.out",   // Efek easing yang halus
+            repeat: -1,           // Animasi terus menerus
+            yoyo: true            // Animasi balik ke posisi awal
+        });
+</script>
 </body>
 
 </html>

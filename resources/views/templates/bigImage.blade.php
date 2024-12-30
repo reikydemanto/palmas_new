@@ -4,7 +4,7 @@
         height: auto;
     }
 </style>
-<section class="container-fluid p-0 position-relative" style="box-sizing: border-box;">
+<section class="container-fluid z-0 p-0 position-relative" style="box-sizing: border-box;">
     <!-- Slider main container -->
     <div id="swiper_big_image" class="swiper w-100">
         <!-- Additional required wrapper -->

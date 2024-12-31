@@ -29,7 +29,7 @@
     }
 
     .swiper-slide:hover .white {
-        color: white!important;
+        color: white !important;
     }
 
     .plus_hover {
@@ -71,13 +71,34 @@
     <div class="swiper2 overflow-hidden" style="height:auto">
         <div class="swiper-wrapper" style="height:auto">
             <!-- Slides -->
+            @foreach ($product_list as $item)
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
+                <a href="/product/{{ $item->ID_PRODUCT }}">
+                    <img class="position-relative gambar-bckg" style="width: 100%;"
+                        src="{{ asset('images/Carousell_bg.png') }}" alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;"
+                        src="{{ asset('images/'.$item->BG_CARROUSEL_IMG) }}" alt="Carousell_bg">
+                    <div class="position-absolute text-center white w-75 text-black"
+                        style="left: 50%; top: 5%; transform: translateX(-50%);">
+                        <h1 class="text-uppercase font-size-medium" style="font-family: 'Helvetica-roman';">{{
+                            $item->NAME }}</h1>
+                    </div>
+                    <img class="position-absolute"
+                        style="width: 33.333333%;left: 52%; top: 57%; transform: translate(-50%, -43%);"
+                        src="{{ asset('images/'.$item->CAN_CARROUSEL_IMG ) }}" alt="">
+                    <img class="position-absolute plus_hover" src="{{ asset('images/Button_Plus_Hover.png') }}" alt="">
+                </a>
+            </div>
+            @endforeach
+
+            {{-- <div class="swiper-slide position-relative border border-end-0 border-black border-1"
+                style="width: 100%; height:auto">
                 <a href="/product/3">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
-                        alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/malt-og-bg.png') }}"
-                        alt="Carousell_bg">
+                    <img class="position-relative gambar-bckg" style="width: 100%;"
+                        src="{{ asset('images/Carousell_bg.png') }}" alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;"
+                        src="{{ asset('images/malt-og-bg.png') }}" alt="Carousell_bg">
                     <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
                         <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con';">MALT</h1>
@@ -92,10 +113,10 @@
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
                 <a href="/product/2">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
-                        alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/malt-white-grape-bg.png') }}"
-                        alt="Carousell_bg">
+                    <img class="position-relative gambar-bckg" style="width: 100%;"
+                        src="{{ asset('images/Carousell_bg.png') }}" alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;"
+                        src="{{ asset('images/malt-white-grape-bg.png') }}" alt="Carousell_bg">
                     <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
                         <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con'">MALT</h1>
@@ -111,10 +132,10 @@
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
                 <a href="/product/4">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
-                        alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/malt-orange-bitter-bg.png') }}"
-                        alt="Carousell_bg">
+                    <img class="position-relative gambar-bckg" style="width: 100%;"
+                        src="{{ asset('images/Carousell_bg.png') }}" alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;"
+                        src="{{ asset('images/malt-orange-bitter-bg.png') }}" alt="Carousell_bg">
                     <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
                         <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con';">MALT</h1>
@@ -130,10 +151,10 @@
             <div class="swiper-slide position-relative border border-end-0 border-black border-1"
                 style="width: 100%; height:auto">
                 <a href="/product/10">
-                    <img class="position-relative gambar-bckg" style="width: 100%;" src="{{ asset('images/Carousell_bg.png') }}"
-                        alt="Carousell_bg">
-                    <img class="position-absolute gambar-hvr" style="width: 100%;" src="{{ asset('images/coconut-green-tea-orange-bg.png') }}"
-                        alt="Carousell_bg">
+                    <img class="position-relative gambar-bckg" style="width: 100%;"
+                        src="{{ asset('images/Carousell_bg.png') }}" alt="Carousell_bg">
+                    <img class="position-absolute gambar-hvr" style="width: 100%;"
+                        src="{{ asset('images/coconut-green-tea-orange-bg.png') }}" alt="Carousell_bg">
                     <div class="position-absolute text-center white w-75 text-black"
                         style="left: 50%; top: 5%; transform: translateX(-50%);">
                         <h1 class="text-uppercase font-size-small" style="font-family: 'Helvetica-bold-con'">power
@@ -148,21 +169,14 @@
                         src="{{ asset('images/coconut-green-tea-orange-can.png') }}" alt="">
                     <img class="position-absolute plus_hover" src="{{ asset('images/Button_Plus_Hover.png') }}" alt="">
                 </a>
-            </div>
+            </div> --}}
         </div>
-        <!-- If we need pagination -->
-        {{-- <div class="swiper-pagination"></div> --}}
-
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev move-right">
             <img class="position-absolute" src="{{ asset('images/Button_Left.png') }}" alt="">
         </div>
         <div class="swiper-button-next move-left">
             <img class="position-absolute" src="{{ asset('images/Button_Right.png') }}" alt="">
         </div>
-
-        <!-- If we need scrollbar -->
-        {{-- <div class="swiper-scrollbar"></div> --}}
     </div>
 </section>
 

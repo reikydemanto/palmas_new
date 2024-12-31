@@ -238,11 +238,12 @@
             top: 45%;
         }
 
-        .swiper-slide .primary-image{
-            width: 75%!important;
+        .swiper-slide .primary-image {
+            width: 75% !important;
         }
-        .swiper-slide .secondary-image{
-            width: 75%!important;
+
+        .swiper-slide .secondary-image {
+            width: 75% !important;
         }
     }
 
@@ -362,27 +363,31 @@
         }
 
         .btn-can-npew-active {
-            width: 48px!important;
-            height: 48px!important;
-        }
-        .btn-can-npew-noactive {
-            width: 48px!important;
-            height: 48px!important;
-        }
-        .btn-label-npew-noactive {
-            width: 48px!important;
-            height: 48px!important;
-        }
-        .btn-label-npew-active {
-            width: 48px!important;
-            height: 48px!important;
+            width: 48px !important;
+            height: 48px !important;
         }
 
-        .swiper-slide .primary-image{
-            width: 100%!important;
+        .btn-can-npew-noactive {
+            width: 48px !important;
+            height: 48px !important;
         }
-        .swiper-slide .secondary-image{
-            width: 100%!important;
+
+        .btn-label-npew-noactive {
+            width: 48px !important;
+            height: 48px !important;
+        }
+
+        .btn-label-npew-active {
+            width: 48px !important;
+            height: 48px !important;
+        }
+
+        .swiper-slide .primary-image {
+            width: 100% !important;
+        }
+
+        .swiper-slide .secondary-image {
+            width: 100% !important;
         }
 
     }
@@ -505,7 +510,8 @@
                 <div id="swiperNav" class="swiper w-100" style="height: 80%;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide position-relative">
-                            <div id="papuan-red-pop-div" class="position-absolute top-50 start-50 translate-middle w-50 h-50">
+                            <div id="papuan-red-pop-div"
+                                class="position-absolute top-50 start-50 translate-middle w-50 h-50">
                                 <img class="primary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-active w-50"
                                     src="{{ asset('/images/Papuan_Red_Pop_NPEW.png') }}" alt="">
                                 <img class="secondary-image img-fluid position-absolute start-50 top-50 translate-middle opacity-image-noactive w-50"
@@ -519,7 +525,8 @@
                                     <button onclick="labelClicked('papuan-red-pop-div')"
                                         class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
                                         style="width:68px;height:68px">
-                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}"
+                                            alt="">
                                     </button>
                                 </div>
                             </div>
@@ -540,7 +547,8 @@
                                     <button onclick="labelClicked('salted-papuan-red-pop-div')"
                                         class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
                                         style="width:68px;height:68px">
-                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}"
+                                            alt="">
                                     </button>
                                 </div>
                             </div>
@@ -561,7 +569,8 @@
                                     <button onclick="labelClicked('greentea_orange')"
                                         class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
                                         style="width:68px;height:68px">
-                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}"
+                                            alt="">
                                     </button>
                                 </div>
                             </div>
@@ -582,7 +591,8 @@
                                     <button onclick="labelClicked('strawberry_sakura')"
                                         class="btn-label-npew-noactive mx-4 d-flex justify-content-center align-items-center border border-black rounded-circle overflow-hidden"
                                         style="width:68px;height:68px">
-                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}" alt="">
+                                        <img class="img-fluid h-50" src="{{ asset('images/label-noactive.png') }}"
+                                            alt="">
                                     </button>
                                 </div>
                             </div>
@@ -605,6 +615,13 @@
                     <div class="swiper-scrollbar"></div>
                 </div>
 
+                <?php
+                    if (Route::current()->uri == '/') {
+                ?>
+                @include('templates.mediumCarrouselUs')
+                <?php
+                    }
+                ?>
                 <div class="row">
                     <a href="/downloadSaleSheet" class="col-md-6 border border-black p-0 href-link">
                         <div class="text-npew-button button-npew-download text-black position-relative d-flex justify-content-center align-items-center"

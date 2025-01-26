@@ -10,6 +10,8 @@ class Product extends Controller
     public function index($id)
     {
         $data['product_detail'] = DB::selectOne("SELECT * FROM product WHERE ID_PRODUCT = '".$id."'");
+        $data['image_slider'] = explode(',', $data['product_detail']->IMG_SLIDE);
+        // dd($data['image_slider']);
         $data['product_list'] = DB::select('SELECT * FROM product WHERE IS_US_PRODUCT = 0');
         
         return

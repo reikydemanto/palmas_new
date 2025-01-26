@@ -169,15 +169,23 @@
 <div class="w-100 top-box"></div>
 <div class="row p-5">
     <div class="col-md-12 col-lg-4 p-0">
-        <div class="swiper bg-warning" style="width: 100%; height:100%">
+        <div class="swiper" style="width: 100%; height:100%">
             <div class="swiper-wrapper">
-                <div class="swiper-slide position-relative" style="width:100%; height:auto">
+                <div class="swiper-slide position-relative" style="width:100%; aspect-ratio: 2/3">
                     <img class="position-absolute z-1 start-50 translate-middle" style="width:35%; top: 50%;"
-                        src="{{ asset('images/'.$product_detail->CAN_CARROUSEL_IMG) }}" alt="">
+                        src="{{ asset('images/' . $product_detail->CAN_CARROUSEL_IMG) }}" alt="">
                     <img class="position-absolute z-0 top-50 start-50 translate-middle w-100 img-fluid"
-                        src="{{ asset('images/'.$product_detail->BG_CARROUSEL_IMG) }}" alt="Carousell_bg">
+                        src="{{ asset('images/' . $product_detail->BG_CARROUSEL_IMG) }}" alt="Carousell_bg">
                 </div>
-                <div class="swiper-slide">
+                @if($image_slider[0] != "")
+                @foreach($image_slider as $image)
+                    <div class="swiper-slide d-flex align-items-center">
+                        <img style="width:100% ;object-fit: cover;" src="{{ asset('images/'.$image) }}"
+                            alt="variant_1">
+                    </div>
+                @endforeach
+                @endif
+                <!-- <div class="swiper-slide">
                     <img style="width:100%; height:100% ;object-fit: cover;" src="{{ asset('images/Variant_2.png') }}"
                         alt="variant_1">
                 </div>
@@ -188,7 +196,7 @@
                 <div class="swiper-slide">
                     <img style="width:100%; height:100% ;object-fit: cover;" src="{{ asset('images/Variant_4.png') }}"
                         alt="variant_1">
-                </div>
+                </div> -->
             </div>
             <div class="swiper-button-prev">
                 <img class="position-absolute" style="left: 10%;" src="{{ asset('images/Button_Left.png') }}" alt="">
@@ -202,7 +210,7 @@
         {{-- <h1 class="text-uppercase first-text-product" style="font-family:'Helvetica-roman'">zero proof
             malt brew</h1> --}}
         <h1 class="text-uppercase second-text-product" style="font-family:'Helvesti-spike-regular'">{{
-            $product_detail->NAME }}</h1>
+    $product_detail->NAME }}</h1>
         {{-- <p class="third-text-product" style="font-family:'Helvetica-roman'" id="price-per-can">IDR 26.000,-/can</p>
         <p class="fourth-text-product" style="font-family:'Helvetica-roman'; width:70%">Sed ut perspiciatis unde omnis
             iste natus
@@ -243,8 +251,8 @@
                 <img class="z-2 position-absolute plus-img" style="left: 50%; top:50%; transform: translate(-50%, -50%)"
                     src="{{ asset('images/Add_to_Cart_Button.png') }}" alt="add_to_cart_button">
             </a>
-            <img class="z-1 position-absolute nut-fact" style="left:15%; top: 50%" src="{{ asset('images/'.$product_detail->NUT_IMAGE) }}"
-                alt="">
+            <img class="z-1 position-absolute nut-fact" style="left:15%; top: 50%"
+                src="{{ asset('images/' . $product_detail->NUT_IMAGE) }}" alt="">
         </div>
     </div>
 </div>
@@ -252,10 +260,10 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         var open = false;
-        $('#plus-nut').click(function(event) {
+        $('#plus-nut').click(function (event) {
             event.preventDefault(); // Mencegah link default
             $('.nut-fact').toggleClass('active');
             if (open) {
@@ -269,23 +277,23 @@
             }
         });
 
-        $('.minus').click(function(event) {
+        $('.minus').click(function (event) {
             minus_button()
             calculate_price()
         })
-        $('.plus').click(function(event) {
+        $('.plus').click(function (event) {
             plus_button()
             calculate_price()
         })
-        $('#quantity-4').click(function(event){
+        $('#quantity-4').click(function (event) {
             $('.quantity').val(4)
             calculate_price()
         })
-        $('#quantity-6').click(function(event){
+        $('#quantity-6').click(function (event) {
             $('.quantity').val(6)
             calculate_price()
         })
-        $('#quantity-12').click(function(event){
+        $('#quantity-12').click(function (event) {
             $('.quantity').val(12)
             calculate_price()
         })

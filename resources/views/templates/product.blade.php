@@ -174,13 +174,13 @@
                 <div class="swiper-slide position-relative" style="width:100%; aspect-ratio: 2/3">
                     <img class="position-absolute z-1 start-50 translate-middle" style="width:35%; top: 50%;"
                         src="{{ asset('images/' . $product_detail->CAN_CARROUSEL_IMG) }}" alt="">
-                    <img class="position-absolute z-0 top-50 start-50 translate-middle w-100 img-fluid"
+                    <img class="position-absolute z-0 top-50 start-50 translate-middle w-100 h-100 img-fluid"
                         src="{{ asset('images/' . $product_detail->BG_CARROUSEL_IMG) }}" alt="Carousell_bg">
                 </div>
                 @if($image_slider[0] != "")
                 @foreach($image_slider as $image)
-                    <div class="swiper-slide d-flex align-items-center">
-                        <img style="width:100% ;object-fit: cover;" src="{{ asset('images/'.$image) }}"
+                    <div class="swiper-slide d-flex align-items-center" style="width:100%; aspect-ratio: 2/3">
+                        <img style="width:100%; height: 100%;object-fit: cover;" src="{{ asset('images/'.$image) }}"
                             alt="variant_1">
                     </div>
                 @endforeach

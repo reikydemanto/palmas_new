@@ -11,7 +11,6 @@
 </style>
 <div class="d-flex justify-content-center align-items-center top-box" style="width: 100%; height:40vh; margin-top:240px">
     <div class="text-center text-uppercase text-black">
-        <h1 class="size-font-big" style="font-family: 'Helvetica-light';">Lorem Ipsum Dolor sit<br>amet consectetur
-            adipiscing</h1>
+        <h1 class="size-font-big" style="font-family: 'Helvetica-light';">Contact Us</h1>
     </div>
 </div>

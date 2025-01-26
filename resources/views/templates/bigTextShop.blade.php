@@ -61,9 +61,7 @@
 <div class="w-100 top-box"></div>
 <div class="d-flex justify-content-center align-items-center" style="width: 100%; height:84vh;">
     <div class="text-center text-black">
-        <h1 class="p-5 text-big text-uppercase" style="font-family: 'Helvetica-light';">Lorem Ipsum Dolor
-            sit amet
-            consectetur adipiscing</h1>
+        <h1 class="p-5 text-big text-uppercase" style="font-family: 'Helvetica-light';">About Us</h1>
         <h1 class="text-small text-small-about" style="font-family: 'Helvetica-medium';">Palmas, founded in 2021, is a
             research and
             development company in the beverage industry. We specialize in creating a soda drink with a unique
@@ -75,11 +73,7 @@
 @else
 <div class="d-flex justify-content-center align-items-center" style="width: 100%; height:100vh;">
     <div class="text-center text-uppercase text-black">
-        <h1 class="p-5 text-big" style="font-family: 'Helvetica-light';">Lorem Ipsum Dolor
-            sit amet
-            consectetur adipiscing</h1>
-        <h1 class="p-5 text-small" style="font-family: 'Helvetica-medium';">tempor incidunt ut labore et dolore
-            magna aliqua</h1>
+        <h1 class="p-5 text-big" style="font-family: 'Helvetica-light';">Our Activities</h1>
     </div>
 </div>
 @endif
